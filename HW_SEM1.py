@@ -34,17 +34,30 @@
 # 385916 -> yes
 # 123456 -> no
 
-tikets_num = int(input('Input six-digit number'))
-first_num = tikets_num // 1000
-second_num = tikets_num % 1000
-first_sum = ((first_num // 100) + (first_num % 10) + ((first_num // 10) % 10))
-second_sum = ((second_num // 100) + (second_num % 10) + ((second_num // 10) % 10))
+# tikets_num = int(input('Input positive six-digit number '))
+# if tikets_num >99999 and tikets_num < 10000000:
+#   first_num = tikets_num // 1000
+#   second_num = tikets_num % 1000
+#   first_sum = ((first_num // 100) + (first_num % 10) + ((first_num // 10) % 10))
+#   second_sum = ((second_num // 100) + (second_num % 10) + ((second_num // 10) % 10))
+#   if first_sum == second_sum:
+#     print('yes')
+#   else :print('no')
+# else: print('Conditions not met')
 
-if first_sum == second_sum:
-  print('yes')
-else :print('no')
 
-
-# Задача 4: Требуется определить, можно ли от шоколадки размером n × m долек отломить k долек, если разрешается сделать один разлом по прямой между дольками (то есть разломить шоколадку на два прямоугольника).
+# Задача 4: Требуется определить, можно ли от шоколадки размером n × m долек отломить k долек,
+#  если разрешается сделать один разлом по прямой между дольками (то есть разломить шоколадку на
+#  два прямоугольника).
 # 3 2 4 -> yes
 # 3 2 1 -> no
+
+m = int(input('Input first positive number '))
+n = int(input('Input second another positive number '))
+k = int(input('Input third positive number '))
+if m !=n:
+  size_of_chokolate = m*n
+  balance = size_of_chokolate - k
+if (m == k or n == k) or (k % m ==0 or k % n ==0 ):
+    print('yes')
+else: print('no')

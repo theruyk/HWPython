@@ -34,7 +34,15 @@
 # 385916 -> yes
 # 123456 -> no
 
+tikets_num = int(input('Input six-digit number'))
+first_num = tikets_num // 1000
+second_num = tikets_num % 1000
+first_sum = ((first_num // 100) + (first_num % 10) + ((first_num // 10) % 10))
+second_sum = ((second_num // 100) + (second_num % 10) + ((second_num // 10) % 10))
 
+if first_sum == second_sum:
+  print('yes')
+else :print('no')
 
 
 # Задача 4: Требуется определить, можно ли от шоколадки размером n × m долек отломить k долек, если разрешается сделать один разлом по прямой между дольками (то есть разломить шоколадку на два прямоугольника).

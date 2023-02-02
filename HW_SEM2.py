@@ -33,9 +33,26 @@
 # 4 4 -> 2 2
 # 5 6 -> 2
 
+# s = int(input('Input sum of numbers  '))
+# p = int(input('Input product of numbers  '))
 
 
 # Задача №3:
 # Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
 # Пример:
 # 10 -> 1 2 4 8
+
+#import math
+# N = int(input('Input number '))
+
+# list1 = list()
+# for i in range (N+1):
+#   list1.append(i)
+# print (list1)
+
+# list2=list()
+# for i in range(len (list1)):
+#   if (2**(list1 [i])) < N:
+#     list2.append(2**(list1 [i]))
+#   else: break
+# print (*list2)

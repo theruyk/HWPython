@@ -34,22 +34,17 @@
 # 5 6 -> 2
 
 
-s = int(input('Input sum of numbers  '))
-p = int(input('Input product of numbers  '))
+# s = int(input('Input sum of numbers  '))
+# p = int(input('Input product of numbers  '))
 
 
-if(s == p):
-    print(s//2, p//2)
-for x in range(s-1):
-    y = s-x
-    if(p==x*y):          
-        print(f'x = {x}, y = {y}')
-        break
-
-
-
-
-
+# if(s == p):
+#     print(s//2, p//2)
+# for x in range(s-1):
+#     y = s-x
+#     if(p==x*y):          
+#         print(f'x = {x}, y = {y}')
+#         break
 
 
 
@@ -58,17 +53,14 @@ for x in range(s-1):
 # Пример:
 # 10 -> 1 2 4 8
 
-#import math
-# N = int(input('Input number '))
+import math
+import math
 
-# list1 = list()
-# for i in range (N+1):
-#   list1.append(i)
-# print (list1)
+list1 = [num for num in range(int(input('Input number '))+1)]
 
-# list2=list()
-# for i in range(len (list1)):
-#   if (2**(list1 [i])) < N:
-#     list2.append(2**(list1 [i]))
-#   else: break
-# print (*list2)
+
+list2=list()
+for i, num in enumerate(list1):
+    if (2**(list1 [i])) < list1[-1]:
+      list2.append(2**(list1 [i]))
+print (*list2)

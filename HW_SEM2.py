@@ -54,7 +54,6 @@
 # 10 -> 1 2 4 8
 
 import math
-import math
 
 list1 = [num for num in range(int(input('Input number '))+1)]
 

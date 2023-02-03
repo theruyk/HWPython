@@ -33,8 +33,24 @@
 # 4 4 -> 2 2
 # 5 6 -> 2
 
-# s = int(input('Input sum of numbers  '))
-# p = int(input('Input product of numbers  '))
+
+s = int(input('Input sum of numbers  '))
+p = int(input('Input product of numbers  '))
+
+
+if(s == p):
+    print(s//2, p//2)
+for x in range(s-1):
+    y = s-x
+    if(p==x*y):          
+        print(f'x = {x}, y = {y}')
+        break
+
+
+
+
+
+
 
 
 # Задача №3:

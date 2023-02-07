@@ -30,6 +30,37 @@
 # 6
 # -> 5
 
+# while True:
+#   import math
+#   size_array = ((int(input('Input size array '))))
+#   list1=[0]*(size_array)
+#   for i in range(len(list1)):
+#     list1.insert(i,(int(input('Input number '))))
+#   for i in range(len(list1)-1,-1,-1):# избавляемся от нулей
+#     if list1[i] == 0:
+#         list1.pop(i)
+#   num_we_search = (int(input('Input searching number ')))
+#   if max(list1) < num_we_search:
+#     print (max(list1))
+#   elif num_we_search < min(list1):
+#     print(min(list1))
+#   else: 
+#     array_bigger= list()
+#     array_smaller=list()
+#     for i in range(len(list1)):
+#       if num_we_search == list1[i]:
+#         print (list1[i])
+#         break
+#       if list1[i] > num_we_search:
+#         array_bigger.append(list1[i])
+#       elif list1[i] < num_we_search:
+#         array_smaller.append(list1[i])
+#     if ((max(array_smaller) + min(array_bigger))//2 == num_we_search): # не знаю как избавиться от ошибки в одном из сценариев
+#         print(min(array_bigger),max(array_smaller))
+#     elif num_we_search > array_smaller[i]:
+#         print(max(array_smaller))
+#     elif num_we_search < array_smaller[i]:
+#        print(min(array_bigger))
 
 
 # Задача 3.

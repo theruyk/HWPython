@@ -35,3 +35,20 @@
 # 4
 # 1 2 3 4
 # 9
+
+n = int(input( 'Введите количество кустов черники: '))
+num_list = []
+for i in range(n):
+  num = int(input( 'Введите количество ягод на i кусте:'))
+  num_list.append(num)
+print(*num_list)
+sum1=0
+for i in range(len(num_list)-1):
+  k = num_list[i] + num_list[i+1] + num_list[i-1]
+  if k > sum1:
+    sum1=k
+num_list2 = [num_list[0], num_list[-1], num_list[-2]]
+sum(num_list2)
+if sum(num_list2) > sum1:
+  print(sum(num_list2))
+else:print(sum1)

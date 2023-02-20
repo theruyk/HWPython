@@ -6,12 +6,12 @@
 
 # first = int(input('Введите первое число '))
 # second = int(input('Введите второе число '))
-# dif = first - second
+# step = int(input('Введите шаг '))
 
 # list1 = list()
 # list1.append(first)
 # for i in range(second - 1):
-#   list1.append(list1[i] + dif)
+#   list1.append(list1[i] + step)
 #   i+=i
 
 # print(list1)
@@ -20,14 +20,14 @@
 # Задача 32: Определить индексы элементов массива (списка), 
 # значения которых принадлежат заданному диапазону (т.е. не меньше заданного минимума и не больше заданного максимума)
 
-first = int(input('Введите минимальное число диапазона '))
-second = int(input('Введите максимальное число диапазона '))
+# first = int(input('Введите минимальное число диапазона '))
+# second = int(input('Введите максимальное число диапазона '))
 
-list1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9,
-0, -5, -5, 7]
+# list1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9,
+# 0, -5, -5, 7]
 
-list2 = list()
-for i in range(len(list1)):
-  if list1[i] >= first and list1[i] <= second:
-    list2.append (i)
-print(list2)
+# list2 = list()
+# for i in range(len(list1)):
+#   if list1[i] >= first and list1[i] <= second:
+#     list2.append (i)
+# print(list2)
